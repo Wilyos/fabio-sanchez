@@ -21,3 +21,21 @@ sobreMi.onclick = () => {
         behavior:"smooth"
     });
 }
+
+const vcardData = `
+BEGIN:VCARD
+VERSION:3.0
+FN:Fabio Sanchez
+ORG:Sistemas litográficos
+TEL;TYPE=CELL:+57 3165281355
+EMAIL:gerencia@sistemaslitograficos.com
+END:VCARD
+  `.trim();
+
+
+
+  const blob = new Blob([vcardData], { type: 'text/vcard' });
+  const url = URL.createObjectURL(blob);
+
+  const downloadLink = document.getElementById('downloadContact');
+  downloadLink.href = url;
