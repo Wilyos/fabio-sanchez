@@ -174,7 +174,7 @@ section{
   border: 2px solid var(--main-color);
   border-radius: 50%;
   color: var(--main-color);
-  margin: 3rem 5rem;
+  margin: 3rem 3rem;
   transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
