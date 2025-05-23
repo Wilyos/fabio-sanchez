@@ -190,7 +190,7 @@ section{
 .social-icons ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   list-style: none;
   padding: 0;
@@ -732,14 +732,30 @@ transform: scale(1.03);
   }
 
   .about-content h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .social-icons span{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color:  var(--text-color);
   }
   .social-icons p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .social-icons span{
+  font-size: 1.5rem;
+  color:  var(--text-color);
+  }
+  .social-icons p {
+    font-size: 1.5rem;
+  }
+
+  .copyright{
+    font-size: 1.5rem;
   }
 }
