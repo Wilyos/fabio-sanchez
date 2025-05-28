@@ -9,11 +9,13 @@ menuIcon.onclick = () => {
 }
 
 
-contacto.onclick = () => {
-    document.getElementById("contacto").scrollIntoView({
-        behavior:"smooth"
-    });
-}
+contacto.onclick = (e) => {
+    e.preventDefault();
+    const downloadLink = document.querySelector('#downloadContact');
+    if (downloadLink) {
+        downloadLink.click();
+    }
+};
 
 
 sobreMi.onclick = () => {
