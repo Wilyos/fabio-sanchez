@@ -44,7 +44,7 @@
 
         <div class="social-icons">
           <div class="social-icons-desc-box">
-            <a id="downloadContact" href="#" download="Sistemas.vcf">
+            <a href="tel:+573165281355">
               <i class='bx bx-phone'></i>
             </a>
             <p style="font-size: small;">contacto</p>
@@ -73,7 +73,7 @@
         </div>
         <div class="btn-group">
           
-            <button id="btn-contacto" class="btn ">Guardar Contacto</button>
+            <button id="btn-contacto" class="btn ">Contáctame</button>
             <button id="btn-sobreMi" class="btn">Sobre mi</button>
         </div>
       </div>
@@ -94,7 +94,7 @@
           Más de 20 años liderando procesos de impresión y producción gráfica con enfoque en calidad, innovación y cumplimiento.
         </p>
         <a href="https://wa.me/573165281355?text=Hola%2C%20estoy%20interesado%20en%20algunos%20productos" target="_blank">
-          <button class="btn">Contàctame</button>
+          <button class="btn">Contáctame</button>
         </a>
       </div>
     </section>
@@ -276,14 +276,14 @@
     <section class="contact" id="contacto">
       <h2 class="heading">Contácta<span>me</span></h2>
 
-     <div class="social-icons">
-          
+      <div class="contact-grid">
+        <div class="social-icons">
           <ul>
             <li>
-               <a href="https://www.google.com/maps/place/Cl.+54+%2354-43,+La+Candelaria,+Medellín,+La+Candelaria,+Medellín,+Antioquia/@6.2525467,-75.5736819,15.75z/data=!4m10!1m2!2m1!1sCl.+54+%23+54-43+La+Candelaria+Medellín,+La+Candelaria,+Medellín,+Antioquia!3m6!1s0x8e4428fc30eabf8d:0x806cee01ca42f59d!8m2!3d6.2545499!4d-75.5707107!15sCktDbC4gNTQgIyA1NC00MyBMYSBDYW5kZWxhcmlhIE1lZGVsbMOtbiwgTGEgQ2FuZGVsYXJpYSwgTWVkZWxsw61uLCBBbnRpb3F1aWGSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11fq6prxdc?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+              <a href="https://www.google.com/maps/place/Cl.+54+%2354-43,+La+Candelaria,+Medellín,+La+Candelaria,+Medellín,+Antioquia/@6.2525467,-75.5736819,15.75z/data=!4m10!1m2!2m1!1sCl.+54+%23+54-43+La+Candelaria+Medellín,+La+Candelaria,+Medellín,+Antioquia!3m6!1s0x8e4428fc30eabf8d:0x806cee01ca42f59d!8m2!3d6.2545499!4d-75.5707107!15sCktDbC4gNTQgIyA1NC00MyBMYSBDYW5kZWxhcmlhIE1lZGVsbMOtbiwgTGEgQ2FuZGVsYXJpYSwgTWVkZWxsw61uLCBBbnRpb3F1aWGSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11fq6prxdc?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <i class='bx bx-been-here'></i>
               </a>
-              <P class="social-icons-pc">Calle 54 # 54-43 Medellín</P>
+              <p class="social-icons-pc">Calle 54 # 54-43 Medellín</p>
             </li>
             <li>
               <a id="downloadContact" href="#" download="Sistemas.vcf">
@@ -301,17 +301,35 @@
               <a href="https://wa.me/573165281355" target="_blank">
                 <i class='bx bxl-whatsapp'></i>
               </a>
-              <P class="social-icons-pc"> Escríbeme</P>
+              <p class="social-icons-pc"> Escríbeme</p>
             </li>
           </ul>
-       
         </div>
+
+        <form id="contact-form" class="contact-form">
+          <div class="input-box">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Correo electrónico" required />
+          </div>
+          <div class="input-box">
+            <input type="tel" name="telefono" placeholder="Teléfono (opcional)" />
+          </div>
+          <div class="input-box">
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">
         <p class="copyright"> &copy; Sistemas Litograficos <br> todos los derechos reservados</p>
     </footer>
-
+    
+    <!-- Toast de notificación -->
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>Mensaje enviado</div>
 
     <script src="script.js"></script>
   </body>
