@@ -1,3 +1,33 @@
+.header #lang-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header #lang-flag {
+  font-size: 2.2em;
+  vertical-align: middle;
+  line-height: 1;
+  margin-right: 0.2em;
+}
+.header #lang-toggle {
+  font-size: 1.3rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  background: linear-gradient(270deg,#80E632 10%,#48a005 100%);
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #fff !important;
+  font-weight: bold;
+  border: none;
+  margin-left: 2rem;
+  min-width: 36px;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 1px 2px #222, 0 0 2px #7ABA49;
+}
+.header #lang-toggle:hover {
+  transform: scale(1.05);
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -39,14 +69,32 @@ body{
   z-index: 1000;
 }
 
+.header #lang-toggle {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(270deg,#80E632 10%,#48a005 100%);
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin-left: 2rem;
+  min-width: 48px;
+  transition: 0.3s ease-in-out;
+}
+.header #lang-toggle:hover {
+  transform: scale(1.05);
+}
+}
+
 #menu-icon{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: var(--main-color);
   display: none;
 }
 
 .logo{
-  font-size: 3rem;
+  font-size: 2.1rem;
   color: var(--text-color);
   font-weight: 800;
   cursor: pointer;
@@ -724,6 +772,14 @@ transform: scale(1.03);
   .gradient-btn{
     display: none;
   }
+  .header #lang-toggle {
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 1100;
+    margin-left: 0;
+  }
 
   .home{
     flex-direction: column-reverse;
@@ -787,14 +843,25 @@ transform: scale(1.03);
 
 
 @media (max-width: 700px){
-
-.services-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-items: center;
-  gap: 2.5rem;
-}
-
+  .header #lang-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 1100;
+    margin-left: 0;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    min-width: 32px;
+    border-radius: 1.5rem;
+    gap: 0.5rem;
+  }
+  .header #lang-flag {
+    font-size: 2em;
+    margin-right: 0.2em;
+  }
  .service-box{
     height: 350px; 
     padding: 2rem;  
