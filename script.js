@@ -8,18 +8,18 @@ const TEXTS = {
       contacto: 'Contacto',
       btn: 'EN'
     },
-    headerBtn: 'Contáctame',
+    headerBtn: 'Guardar contacto',
     home: {
       h1: 'Hola, soy <span>Fabio Sanchez</span>',
       h3: 'Gerente <span>General</span>',
       p: 'En Sistemas Litográficos tenemos las soluciones que necesitas para tus proyectos',
-      btnContacto: 'Contáctame',
+      btnContacto: 'Guardar contacto',
       btnSobreMi: 'Sobre mi'
     },
     about: {
       h2: 'Sobre <span>Mi</span>',
       p: 'Más de 20 años liderando procesos de impresión y producción gráfica con enfoque en calidad, innovación y cumplimiento.',
-      btn: 'Contáctame'
+      btn: 'Guardar contacto'
     },
     proyectos: {
       heading: 'Nuestra <span>Empresa</span>',
@@ -80,18 +80,18 @@ const TEXTS = {
       contacto: 'Contact',
       btn: 'ES'
     },
-    headerBtn: 'Contact me',
+    headerBtn: 'Save contact',
     home: {
       h1: 'Hi, I am <span>Fabio Sanchez</span>',
       h3: 'General <span>Manager</span>',
       p: 'At Sistemas Litográficos we have the solutions you need for your projects',
-      btnContacto: 'Contact me',
+      btnContacto: 'Save contact',
       btnSobreMi: 'About'
     },
     about: {
       h2: 'About <span>Me</span>',
       p: 'Over 20 years leading printing and graphic production processes focused on quality, innovation and reliability.',
-      btn: 'Contact me'
+      btn: 'Save contact'
     },
     proyectos: {
       heading: 'Our <span>Company</span>',
